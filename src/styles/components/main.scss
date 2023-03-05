@@ -1,0 +1,75 @@
+main {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    color: $white;
+
+    .hero {
+      max-width: 600px;
+
+      h1 {
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 8rem;
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 700;
+
+        span {
+          color: $lightblue;
+        }
+      }
+
+      p {
+        margin-top: 3rem;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 16px;
+        margin: 30px 0;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $lightblue;
+          width: 40px;
+          height: 40px;
+          border: 2px solid $lightblue;
+          border-radius: 50%;
+          font-size: 2rem;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: $lightblue;
+            color: $darkblue;
+            box-shadow: 0 0 20px $lightblue;
+          }
+        }
+      }
+
+      > a {
+        display: inline-block;
+        padding: 12px 28px;
+        background: $lightblue;
+        border-radius: 40px;
+        box-shadow: 0 0 10px $lightblue;
+        color: $darkblue;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+
+    .hero-img {
+      img {
+        max-width: 400px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
