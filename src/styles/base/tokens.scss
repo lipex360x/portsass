@@ -1,0 +1,24 @@
+.heading {
+  color: $white;
+
+  span {
+    color: $lightblue;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: $lightblue;
+  border-radius: 40px;
+  box-shadow: 0 0 10px $lightblue;
+  color: $darkblue;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px $lightblue;
+  }
+}

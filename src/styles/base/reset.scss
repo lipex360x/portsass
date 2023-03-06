@@ -39,6 +39,9 @@ body {
   background: $darkblue;
 }
 
+section {
+  min-height: 100vh;
+}
 .container {
   margin: auto;
   width: 100%;

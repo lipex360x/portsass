@@ -1,0 +1,40 @@
+.about {
+  background: $grey;
+  display: flex;
+  color: $white;
+
+  .container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .about-img img {
+      width: 50vh;
+    }
+
+    .heading {
+      font-size: 4.0rem;
+    }
+
+    .about-content {
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h2 {
+        line-height: 1.2;
+      }
+
+      h3 {
+        font-size: 2.6rem;
+      }
+
+      .btn {
+        width: fit-content
+      }
+    }
+  }
+}

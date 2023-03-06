@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/scroll-into-view": "^1.16.0",
     "sass": "^1.58.3",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
     "boxicons": "^2.1.4",
+    "scroll-into-view": "^1.16.2",
     "typed.js": "^2.0.12"
   }
 }

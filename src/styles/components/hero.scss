@@ -1,0 +1,83 @@
+.hero {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    height: 100vh;
+
+    h1 {
+      font-size: 5.6rem;
+      font-weight: 700;
+      line-height: 8rem;
+
+      @include animate('slideRight', 0.3s, 0.5s);
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 700;
+
+      @include animate('slideBottom', 0.5s, 0.3s);
+
+      &:nth-of-type(2) {
+        @include animate('slideTop', 0.5s, 0.4s);
+      }
+
+      span {
+        color: $lightblue;
+      }
+    }
+
+    p {
+      margin-top: 3rem;
+      @include animate('slideTop', 0.3s, 0.6s);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 16px;
+      margin: 30px 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $lightblue;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $lightblue;
+        border-radius: 50%;
+        font-size: 2rem;
+
+        $delay: calc(0.1s * var(--i));
+        @include animate('slideTop', 0.5s, $delay);
+
+        transition: 
+          background 0.3s ease, 
+          color 0.3s ease,
+          box-shadow 0.3s ease;
+
+        &:hover {
+          background: $lightblue;
+          color: $darkblue;
+          box-shadow: 0 0 20px $lightblue;
+        }
+      }
+    }
+
+    .btn {
+      @include animate('fadeIn', 0.8s, 1s);
+    }
+
+    .hero-img {
+      img {
+        max-width: 400px;
+        border-radius: 20px;
+  
+        @include animate('zoomIn', 0.5s, 0.6s);
+        // @include animate('shakeUpDown', 5s, 2s);
+      }
+    }
+  }
+}
