@@ -45,6 +45,8 @@ This is a simple HTML and SASS Project
   Typescript
   SASS
   Boxicons
+  scroll-into-view
+  scrollreveal
   Typed.js
 ```
 

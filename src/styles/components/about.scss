@@ -1,11 +1,11 @@
 #about {
   background: $grey;
   display: flex;
-  color: $white;
+
+  display: none;
 
   .container {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -14,12 +14,7 @@
       width: 50vh;
     }
 
-    .heading {
-      font-size: 4.0rem;
-    }
-
     .about-content {
-
       display: flex;
       flex-direction: column;
       gap: 2rem;
