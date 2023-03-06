@@ -20,6 +20,12 @@ header {
       @include animate('slideRight', 0.5s, 0.2s);
     }
 
+    .menu-icon {
+      font-size: 3.6rem;
+      color: $white;
+      display: none;
+    }
+
     nav {
       display: flex;
       align-items: center;
