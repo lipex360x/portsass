@@ -25,7 +25,13 @@
 
 @keyframes zoomIn {
   0% { opacity: 0; transform: scale(0); }
-  100% { opacity: 1; transform: scale(1);}
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shakeUpDown {
+  0% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-24px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @mixin animate($type, $duration, $delay) {
@@ -58,6 +64,11 @@
 
   @if $type =="zoomIn" {
     animation: zoomIn $duration ease forwards;
+    animation-delay: $delay;
+  }
+
+  @if $type =="shakeUpDown" {
+    animation: shakeUpDown $duration ease-in-out infinite;
     animation-delay: $delay;
   }
 }

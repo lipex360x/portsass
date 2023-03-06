@@ -56,6 +56,11 @@ main {
           $delay: calc(0.1s * var(--i));
           @include animate('slideTop', 0.5s, $delay);
 
+          transition: 
+            background 0.3s ease, 
+            color 0.3s ease,
+            box-shadow 0.3s ease;
+
           &:hover {
             background: $lightblue;
             color: $darkblue;
@@ -75,6 +80,12 @@ main {
         font-weight: 600;
 
         @include animate('fadeIn', 0.8s, 1s);
+
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 0 15px $lightblue;
+        }
       }
     }
 
@@ -84,6 +95,7 @@ main {
         border-radius: 20px;
 
         @include animate('zoomIn', 0.5s, 0.6s);
+        // @include animate('shakeUpDown', 5s, 2s);
       }
     }
   }

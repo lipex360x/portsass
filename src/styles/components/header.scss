@@ -28,10 +28,11 @@ header {
       a {
         color: $white;
         font-weight: bold;
-        transition: color 0.3s;
 
         $delay: calc(0.1s * var(--i));
         @include animate('slideTop', 0.5s, $delay);
+
+        transition: color 0.5s;
 
         &:hover, 
         &.active {
