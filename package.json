@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
-    "boxicons": "^2.1.4"
+    "boxicons": "^2.1.4",
+    "typed.js": "^2.0.12"
   }
 }

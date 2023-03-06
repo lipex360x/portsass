@@ -13,11 +13,19 @@ main {
         font-size: 5.6rem;
         font-weight: 700;
         line-height: 8rem;
+
+        @include animate('slideRight', 0.3s, 0.5s);
       }
 
       h3 {
         font-size: 2.4rem;
         font-weight: 700;
+
+        @include animate('slideBottom', 0.5s, 0.3s);
+
+        &:nth-of-type(2) {
+          @include animate('slideTop', 0.5s, 0.4s);
+        }
 
         span {
           color: $lightblue;
@@ -26,6 +34,7 @@ main {
 
       p {
         margin-top: 3rem;
+        @include animate('slideTop', 0.3s, 0.6s);
       }
 
       .social-icons {
@@ -43,7 +52,9 @@ main {
           border: 2px solid $lightblue;
           border-radius: 50%;
           font-size: 2rem;
-          transition: 0.3s ease;
+
+          $delay: calc(0.1s * var(--i));
+          @include animate('slideTop', 0.5s, $delay);
 
           &:hover {
             background: $lightblue;
@@ -62,6 +73,8 @@ main {
         color: $darkblue;
         letter-spacing: 1px;
         font-weight: 600;
+
+        @include animate('fadeIn', 0.8s, 1s);
       }
     }
 
@@ -69,6 +82,8 @@ main {
       img {
         max-width: 400px;
         border-radius: 20px;
+
+        @include animate('zoomIn', 0.5s, 0.6s);
       }
     }
   }
