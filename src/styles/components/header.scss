@@ -3,9 +3,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding: 20px 0;
-  background: $darkblue;
+  background: rgba($darkblue, 0.9);
   z-index: 100;
 
   .container {
@@ -33,7 +33,7 @@ header {
       gap: 24px;
 
       a {
-        font-weight: bold;
+        font-weight: 500;
 
         $delay: calc(0.1s * var(--i));
         @include animate('slideTop', 0.5s, $delay);
