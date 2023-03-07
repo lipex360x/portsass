@@ -4,7 +4,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/lipex360x/sass/blob/main/assets/live.gif" />
+  <img src="https://github.com/lipex360x/portsass/blob/main/assets/live.gif" />
 </p>
 
 ---
@@ -17,7 +17,7 @@
 
 - [Technologies](#zap-technologies)
 
-- [Live Preview](https://vitets-sass.netlify.app/)
+- [Live Preview](https://portsass.netlify.app/)
 
 ---
 
