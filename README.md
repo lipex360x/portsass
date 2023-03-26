@@ -17,7 +17,7 @@
 
 - [Technologies](#zap-technologies)
 
-- [Live Preview](https://portsass.netlify.app/){target="_blank"}
+- [Live Preview](https://portsass.netlify.app/){:target="_blank"}
 
 ---
 
